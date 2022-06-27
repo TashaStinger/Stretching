@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stretching</title>
+    <style>
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 0;
+      }
+
+      h1,
+      h2 {
+        text-align: center;
+      }
+
+      h1 {
+        color: white;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+        padding: 0;
+        font-size: 40px;
+        margin-bottom: 0;
+      }
+
+      h2 {
+        color: #a02141;
+        line-height: 1.5;
+        font-size: 20px;
+        margin: 0 auto;
+      }
+
+      img {
+        max-width: 31.5%;
+        border-radius: 10px;
+        /* margin: 1px; */
+      }
+
+      p {
+        color: #821a34;
+        line-height: 1.5;
+        font-size: 13px;
+        text-indent: 15px;
+        text-align: justify;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .container {
+        display: block;
+        margin: 20px auto;
+        max-width: 600px;
+        min-width: 250px;
+      }
+
+      .content {
+        padding: 20px 50px;
+        margin: 8px;
+        border-radius: 10px;
+        background: linear-gradient(
+          to right,
+          rgb(242, 112, 156),
+          rgb(255, 148, 114)
+        );
+      }
+
+      .img-block {
+        margin: 40px 0;
+      }
+
+      .img-line {
+        display: block;
+        text-align: center;
+        /* min-width: 100%; */
+      }
+
+      .btn-join {
+        background: white;
+        color: #af2447;
+        line-height: 1.5;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border: none;
+        border-radius: 30px;
+        display: block;
+        margin: 20px auto;
+        padding: 15px 30px;
+        box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.1);
+        transition: all 200ms ease-in-out;
+      }
+
+      .btn-join:hover {
+        background: #af2447;
+        color: white;
+        cursor: pointer;
+      }
+
+      .highlighted-text {
+        color: rgb(255, 255, 255);
+        font-family: "Courier New", Courier, monospace;
+        font-weight: 500;
+      }
+
+      .footer {
+        text-align: center;
+        color: #821a34;
+        line-height: 1.5;
+        font-size: 13px;
+      }
+
+      @media (max-width: 400px) {
+        .content {
+          padding: 24px;
+        }
+
+        .img-block {
+          margin: 20px 0;
+        }
+      }
+
+      @media (max-width: 300px) {
+        h1 {
+          font-size: 32px;
+        }
+
+        h2 {
+          font-size: 16px;
+        }
+
+        .content {
+          padding: 16px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="content">
+        <h1>Stretching</h1>
+        <h2>your healthy hobby</h2>
+        <br />
+        <hr />
+
+        <div class="img-block">
+          <div class="img-line">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/035/960/original/002.jpg?1654077138"
+              alt="Stretching"
+            />
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/035/961/original/003.jpeg?1654077191"
+              alt="Stretching"
+            />
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/035/962/original/004.jpg?1654077239"
+              alt="Stretching"
+            />
+          </div>
+        </div>
+
+        <p>
+          <strong>Stretching</strong> is a form of physical exercise in which a
+          specific muscle or tendon (or muscle group) is deliberately flexed or
+          stretched in order to improve the muscle's felt elasticity and achieve
+          comfortable muscle tone.
+          <span class="highlighted-text">
+            The result is a feeling of increased muscle control, flexibility,
+            and range of motion.
+          </span>
+          Stretching is also used therapeutically to alleviate cramps and to
+          improve function in daily activities by increasing range of motion.
+        </p>
+        <p>
+          <span class="highlighted-text">
+            Increasing <em>flexibility</em> through stretching is one of the
+            basic tenets of physical fitness.
+          </span>
+          It is common for athletes to stretch before (for warming up) and after
+          exercise in an attempt to reduce risk of injury and increase
+          performance.
+        </p>
+        <p>
+          <a href="https://en.wikipedia.org/wiki/Stretching" target="_blank"
+            >Read more on Wikipedia</a
+          >
+        </p>
+        <br />
+
+        <button class="btn-join">Join Stretching Class</button>
+
+        <br />
+        <hr />
+        <br />
+
+        <div class="footer">
+          Coded by
+          <a
+            href="https://www.shecodesfoundation.org/candidates/natalia-chaplia-ukrainian"
+            target="_blank"
+            >Natalia Chaplia</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function exists(string) {
+        return string.length > 0;
+      }
+
+      function askUserContacts() {
+        let name = prompt("What is your name?");
+        if (exists(name)) {
+          let email = prompt("What is your e-mail address?");
+          if (exists(email)) {
+            alert(`Thank you, ${name}! 😀 We will contact with you very soon!`);
+          } else {
+            alert(`${name}, you didn't write your e-mail address 😟`);
+          }
+        } else {
+          alert("You didn't write your name 😟");
+        }
+      }
+
+      let joinButton = document.querySelector("button");
+      joinButton.addEventListener("click", askUserContacts);
+    </script>
+  </body>
+</html>
